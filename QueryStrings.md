@@ -2,7 +2,8 @@
 
 El objeto request es la forma más sencilla y detallada que tenemos dentro de Express para poder manipular las peticiones que se generen en el uso de nuestra aplicación, así con este objeto podremos capturar las cabeceras, los datos enviados por el usuario, e incluso los datos enviados por Ajax. En Express podemos utilizar varios elementos pertenecientes al objeto request para la manipulación de la data, veamos los más útiles y su explicación correspondiente:
 
-- req.params
+- **req.params**
+    
     Este objeto nos permite obtener las rutas, nombres y sus parámetros, se utiliza para obtener más que todos los datos que envía una sección de nuestra aplicación.
 
 - req.param.name
