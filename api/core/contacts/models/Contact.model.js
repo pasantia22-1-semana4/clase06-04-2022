@@ -9,8 +9,9 @@ export class ContactModel{
         return contactsData;
     }
     
-    async findByName(){
-
+    findByName(name,apellido){
+        return contactsData.filter(contact=>contact.name.toLocaleLowerCase()===name.toLocaleLowerCase()).find(contact=>contact.lastname.toLocaleLowerCase()===apellido.toLocaleLowerCase());
+        // return contactsData.find(contact=>contact.name.toLocaleLowerCase()==name.toLocaleLowerCase());
     }
        
 
